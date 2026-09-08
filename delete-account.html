@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delete Account - Maestro Aero</title>
+  <meta name="description" content="Request account deletion for Maestro Aero. Submit your request for verification and account removal.">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Maestro Aero Home">
+        <img src="assets/images/logo.png" alt="Maestro Aero Logo">
+      </a>
+
+      <nav class="nav-menu" aria-label="Primary Navigation">
+        <a href="index.html#search" class="nav-link">Book Flight</a>
+        <a href="index.html#features" class="nav-link">Features</a>
+        <a href="index.html#app-preview" class="nav-link">Mobile App</a>
+        <a href="index.html#loyalty" class="nav-link">Maestro & Miles</a>
+        <a href="index.html#faq" class="nav-link">FAQs</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="index.html" class="btn btn-outline btn-sm">Back to Home</a>
+        <a href="index.html#download" class="btn btn-accent btn-sm">Get App</a>
+      </div>
+
+      <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html#search" class="nav-link">Book Flight</a>
+    <a href="index.html#features" class="nav-link">Features</a>
+    <a href="index.html#app-preview" class="nav-link">Mobile App</a>
+    <a href="index.html#loyalty" class="nav-link">Maestro & Miles</a>
+    <a href="index.html#faq" class="nav-link">FAQs</a>
+    <div class="nav-actions">
+      <a href="index.html" class="btn btn-outline" style="text-align: center;">Back to Home</a>
+      <a href="index.html#download" class="btn btn-accent" style="text-align: center;">Download App</a>
+    </div>
+  </div>
+
+  <!-- Account Deletion Main Section (Matching provided concept) -->
+  <main class="deletion-page-wrap">
+    <div class="container">
+      
+      <!-- Top Title & Subtitle -->
+      <div class="deletion-header">
+        <h1>Delete Account</h1>
+        <div class="accent-divider"></div>
+        <p>If you wish to delete your account, please complete the form below. Our support team will verify your request and confirm via your registered contact details.</p>
+      </div>
+
+      <!-- Deletion Request Card -->
+      <div class="deletion-card" id="deletionCardContainer">
+        <h2 class="deletion-card-title">Account Deletion Request</h2>
+        <p class="deletion-card-desc">Fill in the form with accurate details. This helps us verify your identity.</p>
+
+        <form class="deletion-form" id="accountDeletionForm" onsubmit="handleDeletionSubmit(event)">
+          <!-- Row 1: Full Name & Registered Email/Phone -->
+          <div class="form-row-2">
+            <div class="form-control-group">
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" placeholder="Full Name" required>
+            </div>
+            <div class="form-control-group">
+              <label for="contactInfo">Registered Email or Phone</label>
+              <input type="text" id="contactInfo" placeholder="Registered Email or Phone" required>
+            </div>
+          </div>
+
+          <!-- Row 2: Passport Number -->
+          <div class="form-control-group">
+            <label for="passportNumber">Passport Number</label>
+            <input type="text" id="passportNumber" placeholder="Passport Number" required>
+          </div>
+
+          <!-- Row 3: Reason for Deletion -->
+          <div class="form-control-group">
+            <label for="deletionReason">Reason for Deletion</label>
+            <textarea id="deletionReason" placeholder="Reason for Deletion" rows="5" required></textarea>
+          </div>
+
+          <!-- Notice Alert -->
+          <div class="deletion-warning">
+            <strong>Important Notice:</strong> Deleting your account will permanently remove your Maestro & Miles loyalty balance, member profile, and stored digital boarding passes. If you have active upcoming flight reservations, your airline tickets remain valid directly with the carrier.
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn-deletion-submit" id="submitDeletionBtn">
+            SUBMIT REQUEST
+          </button>
+        </form>
+
+        <!-- Success Message Box (Hidden initially) -->
+        <div id="deletionSuccessBox" style="display: none; text-align: center; padding: 2rem 1rem;">
+          <div style="width: 64px; height: 64px; border-radius: 50%; background: #e0f2f1; color: #00897b; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem;">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          </div>
+          <h3 style="font-size: 1.4rem; font-weight: 800; color: #0f172a; margin-bottom: 0.75rem;">Request Submitted Successfully</h3>
+          <p style="color: #64748b; font-size: 1rem; line-height: 1.6; max-width: 540px; margin: 0 auto 1.5rem;">
+            Thank you. Your account deletion request has been registered. Our security and verification team will review your passport and contact details within <strong>24 to 48 hours</strong> and send a confirmation to your registered contact.
+          </p>
+          <a href="index.html" class="btn btn-outline" style="display: inline-flex;">Return to Homepage</a>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="brand-logo">
+            <img src="assets/images/logo.png" alt="Maestro Aero Logo">
+          </a>
+          <p>Maestro Aero is a modern aviation travel and flight reservation platform by Maestro Group.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <div class="footer-links">
+            <a href="index.html#search">Search Flights</a>
+            <a href="index.html#features">Features</a>
+            <a href="index.html#loyalty">Maestro & Miles</a>
+            <a href="index.html#download">Download App</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal & Safety</h4>
+          <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+            <a href="delete-account.html" style="color: #ffffff; font-weight: 700;">Delete Account</a>
+            <a href="terms.html#refunds">Refund Policy</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-links">
+            <a href="mailto:support@maestrogroup.world">support@maestrogroup.world</a>
+            <a href="index.html#faq">Help & FAQ</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 <strong>Maestro Aero</strong> by Maestro Group. All rights reserved.
+        </div>
+        <div class="footer-legal-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <span>•</span>
+          <a href="terms.html">Terms and Conditions</a>
+          <span>•</span>
+          <a href="delete-account.html">Delete Account</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    function handleDeletionSubmit(e) {
+      e.preventDefault();
+      const form = document.getElementById('accountDeletionForm');
+      const submitBtn = document.getElementById('submitDeletionBtn');
+      const successBox = document.getElementById('deletionSuccessBox');
+
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = 'Submitting...';
+
+      setTimeout(() => {
+        form.style.display = 'none';
+        successBox.style.display = 'block';
+      }, 600);
+    }
+  </script>
+</body>
+</html>
