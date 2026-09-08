@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maestro Aero - Book Your Perfect Flight | Flights, Bidding & Rewards</title>
+  <meta name="description" content="Book your perfect flight with Maestro Aero. Experience real-time seat bidding, competitive airfares, digital boarding passes, and the Maestro & Miles rewards program.">
+  <meta name="keywords" content="Maestro Aero, flight booking, airline tickets, flight bidding, Maestro and Miles, travel app, airline rewards">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Maestro Aero - Book Your Perfect Flight">
+  <meta property="og:description" content="Smart air travel with seat bidding, lowest fare search, and Maestro & Miles loyalty rewards.">
+  <meta property="og:image" content="assets/images/hero-banner.jpg">
+  <meta property="og:type" content="website">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       1. Navigation Bar
+       ======================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Maestro Aero Home">
+        <img src="assets/images/logo.png" alt="Maestro Aero Logo" width="160" height="44">
+      </a>
+
+      <nav class="nav-menu" aria-label="Primary Navigation">
+        <a href="#search" class="nav-link">Book Flight</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#app-preview" class="nav-link">Mobile App</a>
+        <a href="#loyalty" class="nav-link">Maestro & Miles</a>
+        <a href="#faq" class="nav-link">FAQs</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#search" class="btn btn-outline btn-sm">Web Check-in</a>
+        <a href="#download" class="btn btn-accent btn-sm">Get the App</a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#search" class="nav-link">Book Flight</a>
+    <a href="#features" class="nav-link">Features</a>
+    <a href="#app-preview" class="nav-link">Mobile App</a>
+    <a href="#loyalty" class="nav-link">Maestro & Miles</a>
+    <a href="#faq" class="nav-link">FAQs</a>
+    <div class="nav-actions">
+      <a href="#search" class="btn btn-outline" style="text-align: center;">Web Check-in</a>
+      <a href="#download" class="btn btn-accent" style="text-align: center;">Download App</a>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       2. Hero Section
+       ======================================================================== -->
+  <section class="hero" id="home">
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-pill">
+          <span class="dot"></span>
+          <span>Next-Gen Flight Booking & Smart Bidding</span>
+        </div>
+        
+        <h1 class="hero-title">
+          BOOK YOUR <br>
+          <span class="gradient-text">PERFECT FLIGHT</span>
+        </h1>
+        
+        <p class="hero-subtitle">
+          Experience seamless air travel with Maestro Aero. Search top airlines, unlock exclusive flight auctions with our unique <strong>Seat Bidding</strong> engine, and earn <strong>Maestro & Miles</strong> rewards on every journey.
+        </p>
+
+        <div class="hero-cta-group">
+          <!-- Google Play Badge -->
+          <a href="#download" class="store-badge" aria-label="Get it on Google Play">
+            <svg viewBox="0 0 24 24">
+              <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
+            </svg>
+            <span class="badge-text">
+              <span class="small">GET IT ON</span>
+              <span class="big">Google Play</span>
+            </span>
+          </a>
+
+          <!-- App Store Badge -->
+          <a href="#download" class="store-badge" aria-label="Download on App Store">
+            <svg viewBox="0 0 24 24">
+              <path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M15.97,4.69C16.63,3.88 17.08,2.77 16.96,1.66C16,1.7 14.79,2.27 14.12,3.06C13.53,3.75 13.01,4.88 13.16,5.97C14.28,6.05 15.31,5.5 15.97,4.69Z" />
+            </svg>
+            <span class="badge-text">
+              <span class="small">Download on the</span>
+              <span class="big">App Store</span>
+            </span>
+          </a>
+
+          <a href="#search" class="btn btn-outline">
+            Search Flights
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num">500+</span>
+            <span class="stat-label">Global Airlines</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">150K+</span>
+            <span class="stat-label">Happy Flyers</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">4.9 ★</span>
+            <span class="stat-label">Play Store Rating</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Banner & 3D Visual -->
+      <div class="hero-visual">
+        <div class="hero-banner-card">
+          <img src="assets/images/hero-banner.jpg" alt="Maestro Aero - Book Your Perfect Flight Showcase" width="1024" height="571">
+        </div>
+
+        <!-- Floating Badge Top Right -->
+        <div class="floating-glass-card top-right">
+          <div class="card-icon-circle teal">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          </div>
+          <div class="floating-card-info">
+            <h4>Live Fare Tracking</h4>
+            <p>Guaranteed Lowest Prices</p>
+          </div>
+        </div>
+
+        <!-- Floating Badge Bottom Left -->
+        <div class="floating-glass-card bottom-left">
+          <div class="card-icon-circle orange">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          </div>
+          <div class="floating-card-info">
+            <h4>Maestro & Miles</h4>
+            <p>Points on Every Flight</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       3. Interactive Live Flight Search Widget (Simulator)
+       ======================================================================== -->
+  <section class="search-widget-section" id="search">
+    <div class="container">
+      <div class="search-widget-box">
+        <!-- Search Navigation Tabs -->
+        <div class="search-tabs">
+          <button type="button" class="search-tab-btn active">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"></path></svg>
+            Book Flight
+          </button>
+          <button type="button" class="search-tab-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            Check-in
+          </button>
+          <button type="button" class="search-tab-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+            My Trips
+          </button>
+
+          <!-- Trip Type Radios -->
+          <div class="trip-type-radios">
+            <label class="radio-label">
+              <input type="radio" name="tripType" value="oneway" checked>
+              <span>One Way</span>
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="tripType" value="round">
+              <span>Round Trip</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Form Inputs Grid -->
+        <form id="flightSearchForm" onsubmit="return false;">
+          <div class="search-form-grid">
+            <!-- Origin Airport -->
+            <div class="input-group-box">
+              <label for="originAirport">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="10" r="3"></circle><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z"></path></svg>
+                Departure From
+              </label>
+              <input type="text" id="originAirport" value="Dubai (DXB)" required>
+            </div>
+
+            <!-- Swap Button -->
+            <div class="swap-btn-container">
+              <button type="button" class="swap-btn" id="swapAirportsBtn" title="Swap Airports" aria-label="Swap Origin and Destination">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="7 16 3 12 7 8"></polyline><line x1="21" y1="12" x2="3" y2="12"></line><polyline points="17 8 21 12 17 16"></polyline></svg>
+              </button>
+            </div>
+
+            <!-- Destination Airport -->
+            <div class="input-group-box">
+              <label for="destAirport">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="10" r="3"></circle><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z"></path></svg>
+                Destination To
+              </label>
+              <input type="text" id="destAirport" value="Dhaka (DAC)" required>
+            </div>
+
+            <!-- Departure Date -->
+            <div class="input-group-box">
+              <label for="departureDate">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                Departure Date
+              </label>
+              <input type="date" id="departureDate" value="2026-09-30">
+            </div>
+
+            <!-- Return Date (Hidden initially for One-Way) -->
+            <div class="input-group-box" id="returnDateGroup" style="display: none;">
+              <label for="returnDate">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                Return Date
+              </label>
+              <input type="date" id="returnDate" value="2026-10-15">
+            </div>
+
+            <!-- Passengers -->
+            <div class="input-group-box">
+              <label for="passengerCount">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                Passengers
+              </label>
+              <select id="passengerCount">
+                <option value="1" selected>1 Passenger</option>
+                <option value="2">2 Passengers</option>
+                <option value="3">3 Passengers</option>
+                <option value="4">4+ Passengers</option>
+              </select>
+            </div>
+
+            <!-- Search Action Button -->
+            <button type="submit" class="btn btn-accent btn-lg" id="searchFlightBtn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              Search
+            </button>
+          </div>
+        </form>
+
+        <!-- Interactive Flight Results Simulation Preview -->
+        <div class="flight-results-preview" id="flightResultsPreview">
+          <div class="results-header-bar">
+            <div>
+              <h4>Available Flights: Dubai (DXB) ➔ Dhaka (DAC)</h4>
+              <p style="font-size: 0.85rem; color: #64748b;">1 Passenger • Direct & Connecting Routes • Live Airline Feeds</p>
+            </div>
+            <span class="badge badge-teal">Lowest Price Guaranteed</span>
+          </div>
+
+          <!-- Result Card as seen in App Screenshot -->
+          <div class="result-card">
+            <!-- Airline Info -->
+            <div class="airline-badge">
+              <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.25rem;">
+                <span class="badge badge-orange" style="font-size: 0.7rem; padding: 0.15rem 0.5rem;">Popular</span>
+                <span class="airline-name">Mahan Air</span>
+              </div>
+              <span class="flight-number">Flight W51003 • Boeing 777-200ER</span>
+            </div>
+
+            <!-- Timing and Route Line -->
+            <div class="flight-timing-route">
+              <div class="timing-node">
+                <div class="time">14:00</div>
+                <div class="airport">Dubai (DXB)</div>
+              </div>
+
+              <div class="route-flight-line">
+                <span class="route-duration">15 Hour Duration</span>
+                <div class="flight-line-graphic">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="timing-node">
+                <div class="time">05:00</div>
+                <div class="airport">Dhaka (DAC)</div>
+              </div>
+            </div>
+
+            <!-- Fares -->
+            <div class="fare-options-group">
+              <div class="fare-box active">
+                <div class="class-label">Economy</div>
+                <div class="price">৳ 45,005.59</div>
+              </div>
+              <div class="fare-box">
+                <div class="class-label" style="color: #64748b;">Business</div>
+                <div class="price">৳ 305,015.89</div>
+              </div>
+            </div>
+
+            <!-- Actions (Bid & Select) -->
+            <div class="fare-actions">
+              <button type="button" class="btn-bid" onclick="openBidModal()" title="Make an offer below standard price">
+                Bid
+              </button>
+              <button type="button" class="btn btn-primary" onclick="openSelectModal('Economy', '৳ 45,005.59')">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       4. Core Features Section
+       ======================================================================== -->
+  <section class="features-section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Why Maestro Aero</span>
+        <h2>Revolutionizing Aviation Booking For Global Travelers</h2>
+        <p>From proprietary seat bidding to the Maestro & Miles digital rewards ecosystem, we make every flight easier, cheaper, and more rewarding.</p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1: Smart Flight Bidding -->
+        <div class="feature-card">
+          <div class="feature-icon-wrap orange">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"></circle><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path><line x1="12" y1="18" x2="12" y2="20"></line><line x1="12" y1="4" x2="12" y2="6"></line></svg>
+          </div>
+          <h3>Smart Flight Bidding</h3>
+          <p>Don't just accept list prices. Place custom bids on unsold Economy and Business class seats. When airlines approve your bid, you fly premium for a fraction of the cost.</p>
+        </div>
+
+        <!-- Feature 2: Maestro & Miles Loyalty -->
+        <div class="feature-card">
+          <div class="feature-icon-wrap teal">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          </div>
+          <h3>Maestro & Miles Rewards</h3>
+          <p>Every mile traveled turns into currency. Earn points automatically with every booking and spend your balance on seat upgrades, free tickets, and lounge access.</p>
+        </div>
+
+        <!-- Feature 3: Digital Pocket & Passes -->
+        <div class="feature-card">
+          <div class="feature-icon-wrap sky">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="5" width="18" height="14" rx="2"></rect><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          </div>
+          <h3>Digital Pocket & QR Passes</h3>
+          <p>Access your personalized QR code boarding passes and membership credentials offline anytime in "My Pocket". Breeze through airport check-ins effortlessly.</p>
+        </div>
+
+        <!-- Feature 4: Real-Time Flight Alerts -->
+        <div class="feature-card">
+          <div class="feature-icon-wrap teal">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+          </div>
+          <h3>Live Radar & Gate Alerts</h3>
+          <p>Get instant notifications about terminal adjustments, boarding call updates, baggage carousel announcements, and delay predictions before anyone else.</p>
+        </div>
+
+        <!-- Feature 5: Transparent Pricing -->
+        <div class="feature-card">
+          <div class="feature-icon-wrap orange">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <h3>Zero Hidden Surcharges</h3>
+          <p>What you see is exactly what you pay. Transparent taxes, breakdown of luggage rules, and secure multi-currency payment via cards and mobile banking.</p>
+        </div>
+
+        <!-- Feature 6: Global Airline Aggregation -->
+        <div class="feature-card">
+          <div class="feature-icon-wrap sky">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          </div>
+          <h3>500+ Connected Carriers</h3>
+          <p>Search and compare flights from Mahan Air, Emirates, Biman Bangladesh, Saudia, Qatar Airways, Singapore Airlines, and hundreds more with 1-click booking.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       5. Mobile App Deep Dive Showcase
+       ======================================================================== -->
+  <section class="app-showcase-section" id="app-preview">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">App Walkthrough</span>
+        <h2>Experience Maestro Aero on Android & iOS</h2>
+        <p>A native mobile experience engineered for speed, clarity, and ultimate convenience in the skies and on the ground.</p>
+      </div>
+
+      <div class="screens-grid">
+        <!-- Screen 1: Search -->
+        <div class="screen-card">
+          <div class="screen-img-container">
+            <img src="assets/images/screen-search-home.jpg" alt="Maestro Aero - Flight Search Screen" loading="lazy">
+          </div>
+          <div class="screen-details">
+            <span class="screen-step">Step 01 • Search</span>
+            <h3>Quick Route Finder</h3>
+            <p>Select One Way or Round Trip, choose popular hubs like Dubai (DXB) or Dhaka (DAC), and search with dynamic calendar price indicators.</p>
+          </div>
+        </div>
+
+        <!-- Screen 2: Select Flight & Bid -->
+        <div class="screen-card">
+          <div class="screen-img-container">
+            <img src="assets/images/screen-flight-results.jpg" alt="Maestro Aero - Flight Selection & Bid Screen" loading="lazy">
+          </div>
+          <div class="screen-details">
+            <span class="screen-step">Step 02 • Choose & Bid</span>
+            <h3>Real-Time Flight Auction</h3>
+            <p>Compare Economy and Business class tickets side by side. Choose to buy instantly or use our groundbreaking <strong>Bid</strong> button to propose your own fare.</p>
+          </div>
+        </div>
+
+        <!-- Screen 3: Rewards & Profile -->
+        <div class="screen-card">
+          <div class="screen-img-container">
+            <img src="assets/images/screen-login-rewards.jpg" alt="Maestro Aero - Login & Rewards Screen" loading="lazy">
+          </div>
+          <div class="screen-details">
+            <span class="screen-step">Step 03 • Earn & Manage</span>
+            <h3>Maestro & Miles Account</h3>
+            <p>Sign in to your member dashboard. Track points balance in "My Pocket", view your Bronze/Silver tier QR code pass, and redeem perks anytime.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       6. Maestro & Miles Loyalty Program Section
+       ======================================================================== -->
+  <section class="loyalty-section" id="loyalty">
+    <div class="container loyalty-grid">
+      <div class="loyalty-content">
+        <span class="section-tag" style="display: inline-block; margin-bottom: 0.75rem; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; color: var(--color-accent); background: var(--color-accent-soft); padding: 0.35rem 1rem; border-radius: 9999px;">
+          Frequent Flyer Club
+        </span>
+        <h2>Earn Miles Every Time You Fly With Us</h2>
+        <p>
+          With <strong>Maestro & Miles</strong>, your loyalty is richly rewarded. Spend points on a world of privileges: discounted flights, airport lounge access, priority baggage handling, and free seat upgrades.
+        </p>
+
+        <div class="perks-list">
+          <div class="perk-item">
+            <div class="perk-check">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+            <div class="perk-text">
+              <h4>Automatic Point Accrual</h4>
+              <p>Earn points based on flight distance and cabin class automatically synced to your mobile wallet.</p>
+            </div>
+          </div>
+
+          <div class="perk-item">
+            <div class="perk-check">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+            <div class="perk-text">
+              <h4>Tier Upgrades (Bronze to Platinum)</h4>
+              <p>Climb the membership ladder to unlock free baggage allowance, express security lanes, and dedicated customer support.</p>
+            </div>
+          </div>
+
+          <div class="perk-item">
+            <div class="perk-check">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+            <div class="perk-text">
+              <h4>My Pocket Digital QR Pass</h4>
+              <p>Present your in-app QR membership code at airline partner counters worldwide for instant check-in recognition.</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#download" class="btn btn-accent btn-lg">
+          Join Maestro & Miles Free
+        </a>
+      </div>
+
+      <!-- Digital Membership Card Mockup (Recreated faithfully from real app UI) -->
+      <div class="card-visual-wrap">
+        <div class="membership-card-digital">
+          <div class="membership-header">
+            <div>
+              <span class="membership-tier-chip">Bronze Member</span>
+              <div style="font-size: 0.8rem; color: #94a3b8; margin-top: 0.4rem;">Maestro & Miles Loyalty</div>
+            </div>
+            <img src="assets/images/logo.png" alt="Maestro Aero" style="height: 36px; filter: brightness(1.2);">
+          </div>
+
+          <div class="membership-number">
+            9584 1561 6178
+          </div>
+
+          <div class="membership-footer">
+            <div class="holder-info">
+              <div class="label">Member Name</div>
+              <div class="name">Iftikhar Alam</div>
+              <div style="font-size: 0.8rem; color: #ff5722; font-weight: 700; margin-top: 0.3rem;">Points Balance: 4,850 pts</div>
+            </div>
+
+            <div class="qr-code-placeholder" title="Digital Member QR">
+              <svg viewBox="0 0 24 24" width="46" height="46" fill="#0f172a">
+                <path d="M2,2H10V10H2V2M4,4V8H8V4H4M14,2H22V10H14V2M16,4V8H20V4H16M2,14H10V22H2V14M4,16V20H8V16H4M18,14V18H14V14H18M20,18V22H18V20H16V22H14V20H12V18H14V16H16V14H18V16H20V18M22,20H20V22H22V20M20,14V16H22V14H20M12,2H10V4H12V2M6,12H4V14H6V12M12,6H10V8H12V6M8,12H10V14H8V12M12,10H14V12H12V10M14,12H16V14H14V12Z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       7. App Download Call To Action Banner
+       ======================================================================== -->
+  <section class="cta-banner-section" id="download">
+    <div class="container">
+      <div class="cta-banner-box">
+        <div class="cta-content-grid">
+          <div>
+            <h2>Book Smarter. Travel Farther. Download Maestro Aero.</h2>
+            <p>Get ready for takeoff! Download our official app on your Android or iOS device to receive instant flight delay alerts, bid for luxury upgrades, and manage tickets in one seamless portal.</p>
+            
+            <div class="app-badges-wrap">
+              <!-- Google Play -->
+              <a href="#" class="store-badge" aria-label="Get Maestro Aero on Google Play">
+                <svg viewBox="0 0 24 24">
+                  <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
+                </svg>
+                <span class="badge-text">
+                  <span class="small">GET IT ON</span>
+                  <span class="big">Google Play</span>
+                </span>
+              </a>
+
+              <!-- App Store -->
+              <a href="#" class="store-badge" aria-label="Download Maestro Aero on App Store">
+                <svg viewBox="0 0 24 24">
+                  <path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M15.97,4.69C16.63,3.88 17.08,2.77 16.96,1.66C16,1.7 14.79,2.27 14.12,3.06C13.53,3.75 13.01,4.88 13.16,5.97C14.28,6.05 15.31,5.5 15.97,4.69Z" />
+                </svg>
+                <span class="badge-text">
+                  <span class="small">Download on the</span>
+                  <span class="big">App Store</span>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <!-- QR Code Download Box -->
+          <div class="cta-qr-box">
+            <div class="cta-qr-code">
+              <svg viewBox="0 0 24 24" width="100%" height="100%" fill="#00695c">
+                <path d="M2,2H10V10H2V2M4,4V8H8V4H4M14,2H22V10H14V2M16,4V8H20V4H16M2,14H10V22H2V14M4,16V20H8V16H4M18,14V18H14V14H18M20,18V22H18V20H16V22H14V20H12V18H14V16H16V14H18V16H20V18M22,20H20V22H22V20M20,14V16H22V14H20M12,2H10V4H12V2M6,12H4V14H6V12M12,6H10V8H12V6M8,12H10V14H8V12M12,10H14V12H12V10M14,12H16V14H14V12Z" />
+              </svg>
+            </div>
+            <div class="cta-qr-text">
+              <h4>Scan to Download</h4>
+              <p>Point your mobile camera to get the direct download link instantly.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       8. Frequently Asked Questions (Accordion)
+       ======================================================================== -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Got Questions?</span>
+        <h2>Frequently Asked Questions</h2>
+        <p>Everything you need to know about booking flights, placing bids, and our loyalty program.</p>
+      </div>
+
+      <div class="faq-list">
+        <!-- FAQ 1 -->
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            <span>How does the Maestro Aero flight seat bidding work?</span>
+            <span class="faq-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <p>Our smart bidding feature lets travelers submit a custom price offer on selected flights and cabin classes. Participating airlines review open bids leading up to departure. If your offer meets the airline's acceptance threshold, your ticket is automatically confirmed and issued at your bid price!</p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            <span>How do I earn and redeem Maestro & Miles points?</span>
+            <span class="faq-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <p>You automatically earn miles every time you book through the Maestro Aero app. Points are calculated based on the actual flight distance and class of travel. You can redeem points during checkout to pay for tickets, seat upgrades, baggage allowances, or partner hotel perks.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            <span>Can I check-in online and use mobile boarding passes?</span>
+            <span class="faq-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! Maestro Aero offers direct web and mobile check-in starting 24 to 48 hours prior to scheduled departure. Once checked in, your digital boarding pass with barcoded verification will be available offline in your app's "My Pocket" section.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            <span>What payment methods are supported?</span>
+            <span class="faq-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <p>We support all major international and domestic credit/debit cards (Visa, MasterCard, American Express), mobile financial services (bKash, Nagad), and digital wallets. All transactions are protected by bank-grade 256-bit SSL encryption and PCI-DSS compliance.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            <span>What is your cancellation and refund policy?</span>
+            <span class="faq-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <p>Refund and change rules vary depending on the fare conditions set by the specific airline (e.g. Non-Refundable vs Flexible fares). You can review individual cancellation terms prior to booking. For detailed terms, please visit our dedicated <a href="terms.html" style="color: var(--color-primary); font-weight: 600; text-decoration: underline;">Terms & Conditions</a> page.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       9. Footer
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Brand & Mission -->
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="brand-logo">
+            <img src="assets/images/logo.png" alt="Maestro Aero Logo">
+          </a>
+          <p>
+            Maestro Aero is a modern aviation travel and flight reservation platform empowering global travelers with smart bidding, transparent fares, and rewarding loyalty miles.
+          </p>
+          <span class="badge badge-teal" style="background: rgba(0, 137, 123, 0.2); color: #80cbc4;">
+            Part of Maestro Group
+          </span>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <div class="footer-links">
+            <a href="#search">Search Flights</a>
+            <a href="#search">Web Check-in</a>
+            <a href="#features">Smart Bidding</a>
+            <a href="#loyalty">Maestro & Miles</a>
+            <a href="#download">Download App</a>
+          </div>
+        </div>
+
+        <!-- Airlines & Routes -->
+        <div class="footer-col">
+          <h4>Top Routes</h4>
+          <div class="footer-links">
+            <a href="#search">Dubai (DXB) ➔ Dhaka</a>
+            <a href="#search">Dhaka (DAC) ➔ Dubai</a>
+            <a href="#search">London ➔ Dhaka</a>
+            <a href="#search">Singapore ➔ Bangkok</a>
+            <a href="#search">Jeddah ➔ Dhaka</a>
+          </div>
+        </div>
+
+        <!-- Legal & Compliance -->
+        <div class="footer-col">
+          <h4>Legal & Safety</h4>
+          <div class="footer-links">
+            <a href="privacy.html"><strong>Privacy Policy</strong></a>
+            <a href="terms.html"><strong>Terms & Conditions</strong></a>
+            <a href="terms.html#refunds">Refund Policy</a>
+            <a href="privacy.html#security">Data Security</a>
+            <a href="terms.html#bidding">Bidding Rules</a>
+          </div>
+        </div>
+
+        <!-- Newsletter & Updates -->
+        <div class="footer-col footer-newsletter">
+          <h4>Flight Deals Alert</h4>
+          <p>Subscribe to receive flash flight sales and exclusive auction alerts.</p>
+          <form class="newsletter-form" onsubmit="alert('Thank you for subscribing to Maestro Aero flight alerts!'); return false;">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit" class="btn btn-accent btn-sm">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <div>
+          © <span id="currentYear">2026</span> <strong>Maestro Aero</strong> by Maestro Group. All rights reserved.
+        </div>
+        <div class="footer-legal-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <span>•</span>
+          <a href="terms.html">Terms and Conditions</a>
+          <span>•</span>
+          <a href="#faq">Support</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       10. Interactive Modal Dialog (Bid & Booking Select)
+       ======================================================================== -->
+  <div class="modal-overlay" id="actionModal" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Close dialog">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <h3 id="modalTitle" style="font-size: 1.35rem; font-weight: 800; color: #0f172a; margin-bottom: 1rem;">Action Title</h3>
+      <div id="modalBody">
+        <!-- Dynamically injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
